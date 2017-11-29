@@ -19,7 +19,7 @@ public:
     int compare_name(string &);
     int compare_code(string &);
     int display_service();
-    int remove();
+    int remove_service();
     Services_BST *& go_left();
     Services_BST *& go_right();
     

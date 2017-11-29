@@ -18,7 +18,7 @@ Services_BST::Services_BST()
 //destructor
 Services_BST::~Services_BST()
 {
-    remove();
+    remove_service();
 }
 
 
@@ -112,7 +112,7 @@ int Services_BST::display_service()
  Test Cases:
  - nothing to remove
  */
-int Services_BST::remove()
+int Services_BST::remove_service()
 {
     service_name.clear();
     service_code.clear();
