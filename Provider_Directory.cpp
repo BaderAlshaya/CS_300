@@ -127,6 +127,8 @@ int Provider_Directory::remove_services(Services_BST *& current)
         remove_services(current->go_left());
         remove_services(current->go_right());
         current->remove();
+        delete current;
+        current = NULL;
     }
     return 1;
 }
