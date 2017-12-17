@@ -10,9 +10,9 @@ int main()
     file.open("Provider_Directory.txt");
     
     if (!file.is_open())
-        cout << "Unable to find/open the test file!";
-    else if (file.eof())
-        cout << "The file is empty!\n";
+        cout << "Unable to find/open the input file!";
+    else if (file.peek() == -1)
+        cout << "ERROR! THE FILE IS EMPTY!\n";
     else
     {
         Provider_Directory list;
